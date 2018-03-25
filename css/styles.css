@@ -18,6 +18,10 @@ ul {
     padding: 15px;
 }
 
+li:hover {
+    color: #efc417;
+}
+
 /* bio */
 
 
