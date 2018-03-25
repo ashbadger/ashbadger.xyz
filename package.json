@@ -1,0 +1,15 @@
+{
+    "name": "ashbadger.xyz",
+    "version": "1.0.0",
+    "description": "portfolio site for ashly badgett",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"No tests\" && exit 0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ashbadger/ashbadger.xyz.git"
+    },
+    "author": "Ashly Badgett",
+    "license": "MIT"
+  }
