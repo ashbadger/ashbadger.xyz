@@ -148,3 +148,14 @@ a {
         width: 80%;
     }
 }
+
+@media only screen and (max-width: 510px) {
+    #technologies ul {
+        width: 100%;
+    }
+
+    #logo {
+        height: 110%;
+        width: 110%;
+    }    
+}
