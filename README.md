@@ -4,4 +4,4 @@ _oh, hi._
 
 this is the repo for my portfolio site. nothing special. 
 
-using travis ci for ci/cd + s3 for hosting.
+using travis ci + s3 for hosting.
