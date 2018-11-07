@@ -1,176 +1,176 @@
-#logo {
-    height: 85%;
-    width: 85%;
+body {
+  background-image: url(../assets/background.png);
+  color: white;
 }
 
-#content { 
-    margin: 0 auto; 
-    width: 50%;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-ul {
-    display: inline-block;
-    list-style-type: none;
-    list-style-position:inside;
-    margin: 0px;
-    padding: 15px;
+.content { 
+  margin: 0 auto; 
+  width: 50%;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
 }
 
-li:hover {
-    color: #efc417;
+.content__heading {
+color: #ffd379;
+text-shadow: 2px 2px #ffa0a0;
 }
 
-/* bio */
-
-
-h1, li {
-    text-align: left;
+.card {
+  padding: 20px;
+  border-radius: 15px; 
 }
 
-#bio {
+.card__heading {
+  color: #346dcc;
+  text-shadow: 1px 1px #ca6a4b;
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.card--bio {
     background-color:#c73939d1;
-    padding: 20px;
-    border-radius: 15px;   
+    margin-top: 2rem;  
 }
 
-h3#opening {
+.card__open-bracket {
     text-align: left;
     margin: 0px;
 }
 
-h3#closing {
+.card__closing-bracket {
     text-align: right;
     margin: 0px;
 }
 
-small {
-    font-size: 10px;
+.card--project {
+  margin-bottom: 2rem;
 }
 
-h1 {
-    color: black;
+.card--llamaface {
+  background-color:#ffd921eb;
+  color: #443932;
 }
 
-/* projects */
-
-#llamaface {
-    background-color:#ffe200e6;
-    padding: 20px;
-    border-radius: 15px;
+.card--llamaface * {
+  color: #443932;
 }
 
-.fa.fa-github {
-    float: left;
-    font-size: 28px !important;
-    padding: 0px;
-    padding-right: 10px;
+.card--task-tracker {
+  background-color:#525364eb;
 }
 
-.fa.fa-link {
-    float: left;
-    font-size: 25px !important;
-    padding: 0px;
-    margin-top: 3px;
+.card--task-tracker * {
+  color: white;
 }
 
-#projects img {
-    height: 80%;
-    width: 80%;
+.card__subtitle {
+  margin-top: 0px;
 }
 
-#llamaface, #llamaface div {
-    color: #443932;
+.card__title {
+  margin-bottom: 5px;
+  margin-right: 50px;
 }
 
-div {
-    color: white;
+.card .video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-h2 {
-    margin-bottom: 5px;
-    margin-right: 50px;
+.card .video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
-h2 a:hover {
-    color: #777c82;
-}
-
-#llamaface p {
-    margin-top: 0px;
-}
-
-.video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-}
-
-.video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-/* technologies */
-
-#technologies {
-    background-color:#007afdd1;
+.card--technologies {
+    background-color:#5d7c59d4;
     padding: 20px;
     border-radius: 15px;   
     font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#technologies ul {
-    width: 23%;
+.technologies__header {
+  margin-bottom: 1rem;
+  display: block;
 }
 
-/* social icons */
-
-a {
-    color: inherit;
-    text-decoration: none;
+.technologies__group {
+  display: flex;
+  justify-content: center;
 }
 
-#social {
+.technologies__group--title {
+  flex: 0 0 100px;
+  float: left;
+}
+
+.technologies__group--content {
+  text-align: left;
+  margin-bottom: .5rem;
+  width: 350px;
+}
+
+.technologies__list {
+  list-style-type: none;
+  list-style-position:inside;
+  margin: 0px;
+  padding: 15px;
+}
+
+.social {
     margin-top: 40px;
 }
 
-.fa {
-    font-size: 50px !important;
-    padding: 10px;
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+.social__icon {
+  font-size: 50px !important;
+  padding: 10px;
+  color: #30291fd4;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.fa:hover {
-    color: #efc417;
+.social__icon:hover, .card__icon:hover {
+  color: #efc417;
 }
 
-.fa-file-o {
-    font-size: 0;
+.card__icon.fa-github {
+  float: left;
+  font-size: 28px !important;
+  padding: 0px;
+  padding-right: 10px;
 }
 
-/* mobile */
+.card__icon.fa-link {
+  float: left;
+  font-size: 25px !important;
+  padding: 0px;
+  margin-top: 3px;
+}
 
 @media only screen and (max-width: 900px) {
-    #content {
-        width: 80%;
-    }
+  .content {
+      width: 80%;
+  }
 }
 
 @media only screen and (max-width: 510px) {
-    #technologies ul {
-        width: 100%;
-    }
+  .content {
+    width: 100%;
+  }
 
-    #logo {
-        height: 110%;
-        width: 110%;
-    }    
+  .card--technologies { 
+    font-size: 13px;
+  }
 }
