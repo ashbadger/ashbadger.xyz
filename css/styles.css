@@ -77,14 +77,14 @@ text-shadow: 2px 2px #ffa0a0;
   margin-right: 50px;
 }
 
-.card .video-responsive {
+.card__video {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
 }
 
-.card .video-responsive iframe {
+.card__video iframe {
   left: 0;
   top: 0;
   height: 100%;
