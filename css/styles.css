@@ -16,31 +16,41 @@ a {
 }
 
 .content { 
-  margin: 0 auto; 
-  width: 50%;
+  margin: 0 auto;
+  width: 70%;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
 
 .content__heading {
-color: #ffd379;
-text-shadow: 2px 2px #ffa0a0;
+  color: #ffd379;
+  text-shadow: 2px 2px #ffa0a0;
+  font-size: 2.5rem;
+}
+
+.section {
+  margin-top: 5rem;
 }
 
 .card {
   padding: 20px;
-  border-radius: 15px; 
+  border-radius: 10px; 
 }
 
 .card__heading {
   color: #346dcc;
   text-shadow: 1px 1px #ca6a4b;
-  font-size: 2rem;
+  font-size: 2.25rem;
   padding: 0 1rem;
+  text-align: left;
+  background: #1fb1d2;
+  width: fit-content;
+  border-radius: 5px;
+  transform: rotate(-3deg);
 }
 
 .card--bio {
-    background-color:#c73939d1;
+    background-color:#d48e8e;
     margin-top: 2rem;
     padding: 6rem 0rem;
 }
@@ -50,7 +60,7 @@ text-shadow: 2px 2px #ffa0a0;
 }
 
 .card--llamaface {
-  background-color: #f1c800eb;
+  background-color: #fff79ceb;
   color: #443932;
 }
 
@@ -59,7 +69,7 @@ text-shadow: 2px 2px #ffa0a0;
 }
 
 .card--task-tracker {
-  background-color:#525364eb;
+  background-color:#769a8beb;
 }
 
 .card--task-tracker * {
@@ -91,7 +101,7 @@ text-shadow: 2px 2px #ffa0a0;
 }
 
 .card--technologies {
-    background-color:#5d7c59d4;
+    background-color:#d48e8e;
     padding: 20px;
     border-radius: 15px;   
     font-size: 15px;
@@ -142,7 +152,7 @@ text-shadow: 2px 2px #ffa0a0;
 }
 
 .social__icon:hover, .card__icon:hover {
-  color: #efc417;
+  color: #e7d400;
 }
 
 .card__icon.fa-github {
@@ -159,6 +169,12 @@ text-shadow: 2px 2px #ffa0a0;
   padding: 0px;
   margin-top: 1px;
   transition: 0.3s;
+}
+
+@media only screen and (min-width: 1400px) {
+  .content {
+      width: 55%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
