@@ -4,10 +4,11 @@ html {
 }
 
 body {
-  background-image: url(../assets/background.png);
-  color: white;
+  color: rgb(238, 238, 238);
+  background-color: rgb(27, 27, 27);
   height: 100%;
   overflow: auto;
+  font-size: 1.25rem;
 }
 
 a {
@@ -29,7 +30,7 @@ a {
 }
 
 .section {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .card {
@@ -37,43 +38,21 @@ a {
   border-radius: 10px; 
 }
 
-.card__heading {
-  color: #346dcc;
-  text-shadow: 1px 1px #ca6a4b;
-  font-size: 2.25rem;
-  padding: 0 1rem;
-  text-align: left;
-  background: #1fb1d2;
-  width: fit-content;
-  border-radius: 5px;
-  transform: rotate(-3deg);
+.card--name {
+  margin-top: 2rem;
+  padding: 6rem 0rem 0rem 0rem;
 }
 
 .card--bio {
-    background-color:#d48e8e;
-    margin-top: 2rem;
-    padding: 6rem 0rem;
+  font-size: 1.5rem;
 }
 
-.card--project {
-  margin-bottom: 2rem;
+.card--bio p {
+  margin: 0rem;
 }
 
-.card--llamaface {
-  background-color: #fff79ceb;
-  color: #443932;
-}
-
-.card--llamaface * {
-  color: #443932;
-}
-
-.card--task-tracker {
-  background-color:#769a8beb;
-}
-
-.card--task-tracker * {
-  color: white;
+.card--bio .bio__company {
+  font-size: 1.3rem;
 }
 
 .card__subtitle {
@@ -85,90 +64,40 @@ a {
   margin-right: 50px;
 }
 
-.card__video {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-
-.card__video iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
 .card--technologies {
-    background-color:#d48e8e;
-    padding: 20px;
-    border-radius: 15px;   
-    font-size: 15px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.technologies__header {
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.technologies__group {
+  padding: 20px;
+  border-radius: 10px;   
+  font-size: 1.15rem;
   display: flex;
-  justify-content: center;
+  border: 1px solid white;
+  justify-content: space-evenly;
 }
 
-.technologies__group--title {
-  flex: 0 0 100px;
-  float: left;
-}
-
-.technologies__group--content {
+.technologies__list td {
   text-align: left;
-  margin-bottom: .5rem;
-  width: 350px;
+  font-size: 1rem;
 }
 
-.technologies__list {
-  list-style-type: none;
-  list-style-position:inside;
-  margin: 0px;
-  padding: 15px;
+.technologies__list th {
+  text-align: left;
+  width: 120px;
 }
 
 .social {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
 }
 
-.social__icon {
-  font-size: 50px !important;
-  padding: 10px;
-  color: #30291fd4;
-  padding-left: 20px;
-  padding-right: 20px;
-  transition: 0.3s;
+.social__link {
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 1.25rem;
 }
 
-.social__icon:hover, .card__icon:hover {
-  color: #e7d400;
-}
-
-.card__icon.fa-github {
-  float: left;
-  font-size: 28px !important;
-  padding: 0px;
-  padding-right: 10px;
-  transition: 0.3s;
-}
-
-.card__icon.fa-external-link-alt {
-  float: left;
-  font-size: 25px !important;
-  padding: 0px;
-  margin-top: 1px;
-  transition: 0.3s;
+footer {
+  bottom: 1.5rem;
+  position: fixed;
+  width: inherit;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -194,7 +123,35 @@ a {
     width: 100%;
   }
 
-  .card--technologies { 
-    font-size: 13px;
+  .content__heading {
+    font-size: 1.8rem;
+  }
+  
+  .card--name {
+    padding: 3rem 0rem 0rem 0rem;
+  }
+
+  .section {
+    margin-top: 2rem;
+  }
+
+  .card--bio {
+    font-size: 1.3rem;
+  }
+
+  .card--bio .bio__company {
+    font-size: 1.2rem;
+  }
+
+  .card--technologies td { 
+    font-size: 1rem;
+  }
+
+  .card--technologies th { 
+    font-size: 1.2rem;
+  }
+
+  .social__link {
+    font-size: 1.1rem;
   }
 }

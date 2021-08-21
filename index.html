@@ -5,118 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ashly Badgett | Software Engineer</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116473892-1"></script>
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'UA-116473892-1');</script>
   </head>
   <body>
     <div class="content">
+      <div class="card card--name"> 
+        <h1 class="content__heading">Hello, I'm Ashly Badgett</h1>
+      </div>
       <div class="card card--bio"> 
-        <h1 class="content__heading">Hello, I'm Ashly.</h1>
-        <p>I'm a full stack developer.</p>
+        <p>Senior Software Engineer</p>
+        <span class="bio__company">@ The New York Times</span>
       </div>
-      <div id="projects" class="section">
-        <h2 class="card__heading">Projects</h2>
-        <div class="card card--project card--task-tracker">
-            <a href="https://github.com/ashbadger/task-tracker" target="_blank" aria-label="task tracker github repository">
-              <i class="fab fa-github card__icon" aria-hidden="true"></i>
-            </a>
-            <a href="https://task-tracker-react.herokuapp.com/tasks" target="_blank" aria-label="task tracker site">
-              <i class="fa fa-external-link-alt card__icon" aria-hidden="true"></i>
-            </a>
-            <h3 class="card__title">task tracker</h3>
-            <p class="card__subtitle"><i><small>(track your tasks' tasks!)</small></i></p>
-            <div class="card__video">
-              <iframe 
-                src="https://player.vimeo.com/video/324773085?autoplay=1&loop=1&autopause=0&muted=1&quality=1080p" 
-                title="task tracker demo" 
-                frameborder="0" 
-                webkitallowfullscreen mozallowfullscreen allowfullscreen>
-              </iframe>
-            </div>
-            <div>
-              <small>
-                <b>description:</b>
-                <p>keep track of your tasks' tasks!</p>
-              </small>
-              <small>
-                <b class="technologies__header">technologies:</b>
-                <div class="technologies__group">
-                  <span class="technologies__group--title">front end:</span>
-                  <div class="technologies__group--content">react, react-router, styled components, babel, webpack, s3, travis ci</div>
-                </div>
-                <div class="technologies__group">
-                  <span class="technologies__group--title">back end:</span>
-                  <div class="technologies__group--content">firebase</div>
-                </div>
-              </small>
-            </div>
-          </div>
-        </div>
-        <div class="card card--project card--llamaface">
-          <a href="https://github.com/ashbadger/llamaface-ng2" target="_blank" aria-label="llamaface github repository">
-            <i class="fab fa-github card__icon" aria-hidden="true"></i>
-          </a>
-          <a href="http://llamaface-ng2.s3-website-us-east-1.amazonaws.com/posts" target="_blank" aria-label="llamaface site">
-            <i class="fas fa-external-link-alt card__icon" aria-hidden="true"></i>
-          </a>
-          <h3 class="card__title">llamaFace</h3>
-          <p class="card__subtitle"><i><small>(it's f*cebook for llamas!)</small></i></p>
-          <div class="card__video">
-            <iframe 
-              src="https://player.vimeo.com/video/281106502?autoplay=1&loop=1&autopause=0&muted=1&quality=1080p" 
-              title="llamaface demo" 
-              frameborder="0" 
-              webkitallowfullscreen mozallowfullscreen allowfullscreen>
-            </iframe>
-          </div>
-          <div>
-            <small>
-              <b>description:</b>
-              <p>create your llama profile and socialize.</p>
-            </small>
-            <small>
-              <b class="technologies__header">technologies:</b>
-              <div class="technologies__group">
-                <span class="technologies__group--title">front end:</span>
-                <div class="technologies__group--content">angular 6, typescript, jwt, material, s3, travis ci</div>
-              </div>
-              <div class="technologies__group">
-                <span class="technologies__group--title">back end:</span>
-                <div class="technologies__group--content">node, express, mongoose, bcrypt, jwt, mocha, heroku, travis ci</div>
-              </div>
-            </small>
-          </div>
-        </div>
       <div class="section">
-        <h2 class="card__heading">Technologies</h2>
         <div class="card--technologies">
-          <ul class="technologies__list">
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Node.js</li>
-          </ul>
-          <ul class="technologies__list">
-            <li>Angular 7</li>
-            <li>React</li>
-            <li>Material</li>
-          </ul>
-          <ul class="technologies__list">
-            <li>MongoDB</li>
-            <li>Postgres</li>
-            <li>Mocha</li>
-          </ul>
+          <div class="technology__section">
+            <table class="technologies__list">
+              <tr>
+                <th>Languages</th>
+                <td>TypeScript, JavaScript, Node.js</td> 
+              </tr>
+              <tr>
+                <th>Libraries</th>
+                <td>Angular 10, Express, TypeORM, Jest, Mocha, Chai, Storybook, React</td> 
+              </tr>
+              <tr>
+                <th>Databases</th>
+                <td>PostgreSQL, RethinkDB, Redis</td> 
+              </tr>
+              <tr>
+                <th>Other</th>
+                <td>Kubernetes, AWS, Docker</td> 
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
-      <div class="social">
-        <a href="https://github.com/ashbadger" target="_blank" aria-label="github profile">
-          <i class="fab fa-github-square social__icon"></i>
-        </a>
-        <a href="https://linkedin.com/in/ashlybadgett" target="_blank" aria-label="linkedin profile">
-          <i class="fab fa-linkedin social__icon"></i> 
-        </a>
+      <footer>
+        <div class="social">
+          <div class="social__link">
+            <a href="https://github.com/ashbadger" target="_blank" aria-label="Github Profile">Github</a>
+          </div>
+          <div class="social__link">
+            <a href="https://linkedin.com/in/ashlybadgett" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
