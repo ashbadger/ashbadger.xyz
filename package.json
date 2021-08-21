@@ -1,11 +1,7 @@
 {
     "name": "ashbadger.xyz",
     "version": "1.0.0",
-    "description": "portfolio site for ashly badgett",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"No tests\" && exit 0"
-    },
+    "description": "Portfolio site for Ashly Badgett",
     "repository": {
       "type": "git",
       "url": "git+https://github.com/ashbadger/ashbadger.xyz.git"
