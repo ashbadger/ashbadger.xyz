@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ashbadger/ashbadger.xyz.svg?branch=master)](https://travis-ci.org/ashbadger/ashbadger.xyz)
+[![Build Status](https://app.travis-ci.com/ashbadger/ashbadger.xyz.svg?branch=master)](https://app.travis-ci.com/ashbadger/ashbadger.xyz)
 
 _hello, hello._
 
