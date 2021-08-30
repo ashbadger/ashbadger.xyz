@@ -94,12 +94,6 @@ a {
   font-size: 1.25rem;
 }
 
-footer {
-  bottom: 1.5rem;
-  position: fixed;
-  width: inherit;
-}
-
 @media only screen and (min-width: 1400px) {
   .content {
       width: 55%;
